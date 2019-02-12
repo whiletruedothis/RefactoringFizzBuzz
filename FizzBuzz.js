@@ -24,3 +24,5 @@ function fizzbuzz (i) {
   }
   
   fizzbuzz(3)
+
+  module.exports = fizzbuzz;

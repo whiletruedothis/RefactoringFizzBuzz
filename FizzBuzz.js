@@ -1,10 +1,24 @@
+function isMultipleOf3(x) {
+  return x % 3 === 0;
+}
+
+function isMultipleOf5(x) {
+  return x % 5 === 0;
+}
+
+function isMultipleOf3And5(x) {
+  return ( x % 5 === 0 && x % 3 === 0 );
+}
+
+
+
 function fizzbuzz (i) {
   switch(true) {
-    case ( i % 3 === 0 && i % 5 === 0 ):
+    case isMultipleOf3And5(i):
       return 'FizzBuzz';
-    case i % 3 === 0:
+    case isMultipleOf3(i):
       return 'Fizz';
-    case i % 5 === 0:
+    case isMultipleOf5(i):
       return 'Buzz';
     default:
       return i;

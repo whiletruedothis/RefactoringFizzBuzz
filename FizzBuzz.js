@@ -1,23 +1,26 @@
-function fizzbuzz () {
-    for(i = 0; i < 100; i++) 
-    {
+function fizzbuzz (i) {
+
         if (i % 3 === 0 && i % 5 === 0)
         {
-          console.log("FizzBuzz");                    
+          return"FizzBuzz";                    
         }
         else 
           if(i % 3 === 0)
           {
-            console.log("Fizz");
+            return"Fizz";
           }
           else 
             if(i % 5 === 0)
             {
-              console.log("Buzz");
+              return"Buzz";
             }
             else
-              console.log(i);
-    }
+              returni;
+    
+  }
+
+  for(i = 0; i < 100; i++) 
+  {
   }
   
-  fizzbuzz()
+  fizzbuzz(3)

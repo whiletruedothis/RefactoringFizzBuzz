@@ -5,6 +5,10 @@ test('returns Fizz for multiple of 3 ', () => {
 });
 
 test('returns Buzz for multiple of 5 ', () => {
-    expect(fizzbuzz(5)).toBe('Buzz');
+    expect(fizzbuzz(10)).toBe('Buzz');
+});
+
+test('returns FizzBuzz for multiple of 5 and 3 ', () => {
+    expect(fizzbuzz(15)).toBe('FizzBuzz');
 });
 

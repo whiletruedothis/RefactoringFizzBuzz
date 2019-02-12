@@ -1,34 +1,35 @@
-function isMultipleOf3(x) {
-  return x % 3 === 0;
+function isFizz(number) {
+  return number % 3 === 0;
 }
 
-function isMultipleOf5(x) {
-  return x % 5 === 0;
+function isBuzz(number) {
+  return number % 5 === 0;
 }
 
-function isMultipleOf3And5(x) {
-  return ( x % 5 === 0 && x % 3 === 0 );
+function isFizzBuzz(number) {
+  return (isFizz(number) && isBuzz(number));
 }
 
-function fizzBuzzOf (i) {
+
+function getFizzBuzzOf (number) {
   switch(true) {
-    case isMultipleOf3And5(i):
+    case (isFizzBuzz(number)):
       return 'FizzBuzz';
-    case isMultipleOf3(i):
+    case isFizz(number):
       return 'Fizz';
-    case isMultipleOf5(i):
+    case isBuzz(number):
       return 'Buzz';
     default:
-      return i;
+      return number;
   }
 }
 
 function fizzBuzzSequenceTo(limit) {
   for(i = 0; i < limit; i++) {
-    console.log(fizzBuzzOf(i));
+    console.log(getFizzBuzzOf(i));
   }
 }
 
 fizzBuzzSequenceTo(100);
 
-module.exports = fizzBuzzOf;
+module.exports = getFizzBuzzOf;

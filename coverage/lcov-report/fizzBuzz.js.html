@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">90% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>9/10</span>
+        <span class='fraction'>12/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">87.5% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>7/8</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>5/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">90% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/10</span>
+        <span class='fraction'>12/12</span>
       </div>
     </div>
     <p class="quiet">
@@ -73,67 +73,88 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">207x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">108x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">108x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">108x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">29x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">55x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">100x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">function fizzbuzz (i) {
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">function isFizz(number) {
+  return number % 3 === 0;
+}
 &nbsp;
-        if (i % 3 === 0 &amp;&amp; i % 5 === 0)
-        {
-          return"FizzBuzz";                    
-        }
-        else 
-          if(i % 3 === 0)
-          {
-            return"Fizz";
-          }
-          else 
-            <span class="missing-if-branch" title="else path not taken" >E</span>if(i % 5 === 0)
-            {
-              return"Buzz";
-            }
-            else
-<span class="cstat-no" title="statement not covered" >              returni;</span>
-    
+function isBuzz(number) {
+  return number % 5 === 0;
+}
+&nbsp;
+function isFizzBuzz(number) {
+  return (isFizz(number) &amp;&amp; isBuzz(number));
+}
+&nbsp;
+&nbsp;
+function getFizzBuzzOf (number) {
+  switch(true) {
+    case (isFizzBuzz(number)):
+      return 'FizzBuzz';
+    case isFizz(number):
+      return 'Fizz';
+    case isBuzz(number):
+      return 'Buzz';
+    default:
+      return number;
   }
+}
 &nbsp;
-  for(i = 0; i &lt; 100; i++) 
-  {
+function fizzBuzzSequenceTo(limit) {
+  for(i = 0; i &lt; limit; i++) {
+    console.log(getFizzBuzzOf(i));
   }
-  
-  fizzbuzz(3)
+}
 &nbsp;
-  module.exports = fizzbuzz;</pre></td></tr>
+fizzBuzzSequenceTo(100);
+&nbsp;
+module.exports = getFizzBuzzOf;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 12 2019 09:35:21 GMT-0400 (Bolivia Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 12 2019 12:26:44 GMT-0400 (Bolivia Time)
 </div>
 </div>
 <script src="prettify.js"></script>

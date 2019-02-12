@@ -10,9 +10,7 @@ function isMultipleOf3And5(x) {
   return ( x % 5 === 0 && x % 3 === 0 );
 }
 
-
-
-function fizzbuzz (i) {
+function fizzBuzzOf (i) {
   switch(true) {
     case isMultipleOf3And5(i):
       return 'FizzBuzz';
@@ -29,6 +27,6 @@ function fizzbuzz (i) {
   {
   }
   
-  fizzbuzz(3)
+  fizzBuzzOf(3)
 
-  module.exports = fizzbuzz;
+  module.exports = fizzBuzzOf;

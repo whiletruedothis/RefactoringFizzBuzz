@@ -23,10 +23,12 @@ function fizzBuzzOf (i) {
   }
 }
 
-  for(i = 0; i < 100; i++) 
-  {
+function fizzBuzzSequenceTo(limit) {
+  for(i = 0; i < limit; i++) {
+    console.log(fizzBuzzOf(i));
   }
-  
-  fizzBuzzOf(3)
+}
 
-  module.exports = fizzBuzzOf;
+fizzBuzzSequenceTo(100);
+
+module.exports = fizzBuzzOf;
